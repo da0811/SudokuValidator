@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bbef86a-008d-4b89-9139-3014a14c55be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/SudokuBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validator/SudokuValidatorLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validator/SudokuValidatorLogic.java" afterDir="false" />
-    </list>
+    <list default="true" id="9bbef86a-008d-4b89-9139-3014a14c55be" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
