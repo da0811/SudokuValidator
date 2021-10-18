@@ -17,6 +17,10 @@ public class SudokuBoard {
         return sudokuBoard[row][column];
     }
 
+    public int[][] getSudokuBoard() {
+        return sudokuBoard;
+    }
+
     /*
     {6, 2, 4, 5, 3, 9, 1, 8, 7},
                 {5, 1, 9, 7, 2, 8, 6, 3, 4},
