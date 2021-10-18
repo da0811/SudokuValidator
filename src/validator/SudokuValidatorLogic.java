@@ -7,4 +7,8 @@ public class SudokuValidatorLogic {
     public boolean validate(int[][] Arr) {
         return false;
     }
+
+    public void invalidator(SudokuBoard.2DArr) {
+
+    }
 }
