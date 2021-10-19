@@ -5,18 +5,21 @@ public class SudokuBoard {
     int[][] sudokuBoard;
 
     public SudokuBoard() {
-        // default or assigned sudoku board
+        // default board with zeros
         sudokuBoard = new int[9][9];
     }
 
+    // takes in a new board (or the one assigned in the HW) and assigns the reference & class attribute sudokuBoard to that passed in array
     public SudokuBoard(int[][] arr) {
         sudokuBoard = arr;
     }
 
+    // this method is never used in this version
     public int getSudokuBoardVal(int row, int column) {
         return sudokuBoard[row][column];
     }
 
+    // returns address referring to game board
     public int[][] getSudokuBoard() {
         return sudokuBoard;
     }
