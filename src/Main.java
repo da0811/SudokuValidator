@@ -21,7 +21,36 @@ public class Main implements Runnable {
 
         boolean areRowsValid = validator.columnValidator(sudokuBoard.getSudokuBoard());
         boolean areColumnsValid = validator.rowValidator(sudokuBoard.getSudokuBoard());
-        
+
+        boolean isSubgridOneValid = validator.subgridValidator(1, sudokuBoard.getSudokuBoard());
+        boolean isSubgridTwoValid = validator.subgridValidator(2, sudokuBoard.getSudokuBoard());
+        boolean isSubgridThreeValid = validator.subgridValidator(3, sudokuBoard.getSudokuBoard());
+        boolean isSubgridFourValid = validator.subgridValidator(4, sudokuBoard.getSudokuBoard());
+        boolean isSubgridFiveValid = validator.subgridValidator(5, sudokuBoard.getSudokuBoard());
+        boolean isSubgridSixValid = validator.subgridValidator(6, sudokuBoard.getSudokuBoard());
+        boolean isSubgridSevenValid = validator.subgridValidator(7, sudokuBoard.getSudokuBoard());
+        boolean isSubgridEightValid = validator.subgridValidator(8, sudokuBoard.getSudokuBoard());
+        boolean isSubgridNineValid = validator.subgridValidator(9, sudokuBoard.getSudokuBoard());
+
+        System.out.println("Rows are " + areRowsValid);
+        System.out.println("Columns are " + areColumnsValid);
+        boolean areGridsValid = false;
+        if(     isSubgridOneValid &&
+                isSubgridTwoValid &&
+                isSubgridThreeValid &&
+                isSubgridFourValid &&
+                isSubgridFiveValid &&
+                isSubgridSixValid &&
+                isSubgridSevenValid &&
+                isSubgridEightValid &&
+                isSubgridNineValid) {
+            areGridsValid = true;
+        }
+
+        System.out.println("Grids are " + areGridsValid);
+
+
+
     }
 
     @Override
