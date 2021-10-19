@@ -25,7 +25,7 @@ public class Main implements Runnable {
         // instance of sudoku validator to invoke the methods from that class
         SudokuValidator validator = new SudokuValidator();
 
-        // the required 11 threads of HW assignment being initialized
+        // the required 11 threads of HW assignment being initialized - there are 12 total if you include main thread
         Thread rowsThread = new Thread();
         Thread columnsThread = new Thread();
 
