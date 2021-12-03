@@ -1,11 +1,9 @@
 import data.SudokuBoard;
 import validator.SudokuValidator;
 
-// Professor Fulakeza I want to admit I think this program may not work for certain cases - I can explain in class if you want to check 
-
 public class Main implements Runnable {
 
-    // locally initialized & customizable sudoku board
+    // locally initialized sudoku board
     int[][] arr2D2 = {
             {2, 2, 4, 5, 3, 9, 1, 8, 7},
             {5, 1, 9, 7, 2, 8, 6, 3, 4},
@@ -31,25 +29,6 @@ public class Main implements Runnable {
 
         Main mainThread = new Main();
 
-        // locally initialized & customizable sudoku board
-//        int[][] arr2D = {
-//                {6, 2, 4, 5, 3, 9, 1, 8, 7},
-//                {5, 1, 9, 7, 2, 8, 6, 3, 4},
-//                {8, 3, 7, 6, 1, 4, 2, 9, 5},
-//                {1, 4, 3, 8, 6, 5, 7, 2, 9},
-//                {9, 5, 8, 2, 4, 7, 3, 6, 1},
-//                {7, 6, 2, 3, 9, 1, 4, 5, 8},
-//                {3, 7, 1, 9, 5, 6, 8, 4, 2},
-//                {4, 9, 6, 1, 8, 2, 5, 7, 3},
-//                {2, 8, 5, 4, 7, 3, 9, 1, 6}
-//        };
-
-        // instance of sudoku board with local board passed in
-//        SudokuBoard sudokuBoard = new SudokuBoard(arr2D);
-
-        // instance of sudoku validator to invoke the methods from that class
-//        SudokuValidator validator = new SudokuValidator();
-
         // the required 11 threads of HW assignment being initialized - there are 12 total if you include main thread
         Thread rowsThread = new Thread(mainThread, "rows");
         Thread columnsThread = new Thread(mainThread, "columns");
@@ -63,9 +42,6 @@ public class Main implements Runnable {
         Thread subgridSeven = new Thread(mainThread, "subgridSeven");
         Thread subgridEight = new Thread(mainThread, "subgridEight");
         Thread subgridNine = new Thread(mainThread, "subgridNine");
-
-//        boolean isTrue[] = new boolean[11];
-
 
         try {
             // all the thread individually being started
